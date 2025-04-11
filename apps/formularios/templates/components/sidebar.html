@@ -1,5 +1,6 @@
 
-<!-- Sidebar Navigation -->
+{% load static %}
+!-- Sidebar Navigation -->
 <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
         <h2 class="sidebar-title">PDFlow</h2>
@@ -12,7 +13,7 @@
     <nav class="sidebar-nav">
         <ul>
             <li class="sidebar-nav-item">
-                <a href="" class="sidebar-nav-link" id="downloadBtn">
+                <a href="{% url 'formularios' %}" class="sidebar-nav-link" id="downloadBtn">
                     <svg class="sidebar-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 9L12 2L21 9V21H3V9Z"></path>
                         
@@ -22,7 +23,7 @@
                 </a>
             </li>
             <li class="sidebar-nav-item">
-                <a href="" class="sidebar-nav-link" id="downloadBtn">
+                <a href="{% static 'Ex/ZeroHumExPadrao.xlsx' %}" class="sidebar-nav-link" id="downloadBtn">
                     <svg class="sidebar-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="17 8 12 3 7 8"></polyline>
